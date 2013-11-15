@@ -1,0 +1,16 @@
+package org.jboss.samples.rs.webservices;
+
+import javax.ws.rs.Produces;
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+
+@Path("/MyRESTApplication")
+public class MyRESTResource {
+
+	@GET()
+	@Produces("text/plain")
+	public String sayHello() {
+	    return "Hello World!";
+	}
+	
+}
